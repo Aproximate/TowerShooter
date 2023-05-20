@@ -310,6 +310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1389195350}
+  - component: {fileID: 1389195351}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -332,6 +333,21 @@ Transform:
   m_Father: {fileID: 4681156959788705378}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1389195351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389195349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a05e0f53fc62db4cac16645053bcee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _towerSize: 50
+  _buildPoint: {fileID: 1389195350}
+  _block: {fileID: -817394560957144180, guid: 422b88c7b582d2444a5ae142b7628e2c, type: 3}
 --- !u!1001 &1291710234022744033
 PrefabInstance:
   m_ObjectHideFlags: 0

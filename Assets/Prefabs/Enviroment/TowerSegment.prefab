@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2991605238754622620}
   - component: {fileID: 4405969554600454}
   - component: {fileID: 1652359338102430487}
+  - component: {fileID: -817394560957144180}
   m_Layer: 0
   m_Name: TowerSegment
   m_TagString: Untagged
@@ -98,3 +99,15 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2534964839176971238, guid: 4dddf71e60b964241af7271d8aef4a5f, type: 3}
+--- !u!114 &-817394560957144180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5856112279528655577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 879e4bfcb6813144daf5602211e590a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
