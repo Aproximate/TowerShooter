@@ -5,7 +5,7 @@ public class TowerBuilder : MonoBehaviour
 {
     [SerializeField] private int _towerSize;
     [SerializeField] private Transform _buildPoint;
-    [SerializeField] private Block _block;
+    [SerializeField] private Block _blockTemplate;
 
     private List<Block> _blocks;
 
@@ -32,11 +32,11 @@ public class TowerBuilder : MonoBehaviour
 
     private Block BuildBlock(Transform currentBuildPoint)
     {
-        return Instantiate(_block, GetBuildPoint(currentBuildPoint), Quaternion.identity, _buildPoint);
+        return Instantiate(_blockTemplate, GetBuildPoint(currentBuildPoint), Quaternion.identity, _buildPoint);
     }
 
     private Vector3 GetBuildPoint(Transform currentSegment)
     {
-        return new Vector3(_buildPoint.position.x, currentSegment.position.y + currentSegment.localScale.y / 2 + _block.transform.localScale.y / 2, _buildPoint.position.z);
+        return new Vector3(_buildPoint.position.x, currentSegment.position.y + currentSegment.localScale.y / 2 + _blockTemplate.transform.localScale.y / 2, _buildPoint.position.z);
     }
 }
