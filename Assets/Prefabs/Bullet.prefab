@@ -112,6 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 20
+  _bounceForce: 20
+  _bounceRadius: 360
 --- !u!54 &3436440524820206930
 Rigidbody:
   m_ObjectHideFlags: 0

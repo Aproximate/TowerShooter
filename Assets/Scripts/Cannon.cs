@@ -1,10 +1,12 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class Cannon : MonoBehaviour
 {
     [SerializeField] private Transform _shootPoint;
     [SerializeField] private Bullet _bulletTemplate;
     [SerializeField] private float _delayBetweenShoots;
+    [SerializeField] private float _recoilDistance;
 
     private float _timeAfterShoot;
 
@@ -12,11 +14,12 @@ public class Cannon : MonoBehaviour
     {
         _timeAfterShoot += Time.deltaTime;
 
-        if(Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0))
         {
-            if(_timeAfterShoot > _delayBetweenShoots)
+            if (_timeAfterShoot > _delayBetweenShoots)
             {
                 Shoot();
+                transform.DOMoveZ(transform.position.z - _recoilDistance, _delayBetweenShoots / 2).SetLoops(2, LoopType.Yoyo);
                 _timeAfterShoot = 0;
             }
         }
